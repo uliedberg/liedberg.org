@@ -4,9 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width; initial-scale=1"/>
+    <title>liedberg.org/ulf</title>
+
     <link rel="stylesheet" type="text/css" href="css/ulf.css?cachebust=2" />
 
-    <title>liedberg.org/ulf</title>
+    <script src="http://ajax.cdnjs.com/ajax/libs/yepnope/1.0.1/yepnope.min.js"></script>
+    <script>
+        yepnope({
+            load: ['js/google-analytics.js?cachebust=1', 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js', 'http://widgets.twimg.com/j/2/widget.js', 'js/ulf.js?cachebust=3'],
+            complete: function () {
+                $(document).ready(function() { ulf.setup(); });
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -48,14 +58,6 @@
         </div>
 
     </div>
-
-
-    <script src="js/google-analytics.js?cachebust=1"></script>
-
-    <script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-
-    <script src="js/ulf.js?cachebust=3"></script>
 
 </body>
 
