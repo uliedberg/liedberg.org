@@ -1,7 +1,4 @@
 
-$.webshims.loader.basePath += 'shims/';
-$.webshims.polyfill();
-
 $(document).ready(function() {
 
     var widgetDiv = $('#twitter-widget-ulf');
