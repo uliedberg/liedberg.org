@@ -1,0 +1,4 @@
+# ignore the IDEA stuff and workarounds …
+.idea
+liedberg.org.iml
+pom.xml
