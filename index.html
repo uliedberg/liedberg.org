@@ -1,34 +1,40 @@
-<html>
-
-	<head>
-		<title>liedberg.org</title>
-		<style type="text/css">
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>liedberg.org</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<style type="text/css">
 		body {
-			font-family: 	"Lucida Sans",
-             				"Lucida Grande",
-             				Lucida,
-					Arial,
-             				sans-serif;
+			font-family: 'Andale Mono', 'Courier New', monospace;
+
+			box-sizing: border-box;
+			width: 34em;
+			max-width: 100%;
+			margin: 5em auto;
+			padding: 0 2em;
+
+			color: #222;
+			background: #fafafa;
 		}
-		</style>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20212353-1']);
-  _gaq.push(['_trackPageview']);
+		.hidden {
+			display: none;
+		}
+	</style>
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-	</head>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<body>
-		<h1>liedberg.org</h1>
-		<p>
-			fr&aring;n linode.com
-		</p>
-	</body>
-
+		ga('create', 'UA-20212353-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+        <h1>liedberg.org</h1>
+	<ul>
+		<li><a href="/ulf">ulf</a></li>
+	</ul>
+</body>
 </html>

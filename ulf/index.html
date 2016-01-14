@@ -1,67 +1,40 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1"/>
-    <title>liedberg.org/ulf</title>
+	<meta charset="utf-8">
+	<title>liedberg.org</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<style type="text/css">
+		body {
+			font-family: 'Andale Mono', 'Courier New', monospace;
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Geo">
-    <link rel="stylesheet" type="text/css" href="css/ulf.css?cachebust=4" />
+			box-sizing: border-box;
+			width: 34em;
+			max-width: 100%;
+			margin: 5em auto;
+			padding: 0 2em;
 
-    <script src="http://ajax.cdnjs.com/ajax/libs/labjs/1.2.0/LAB.min.js"></script>
-    <script>
-        $LAB
-        .script('js/google-analytics.js?cachebust=1')
-        .script('http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js')
-        .script('http://widgets.twimg.com/j/2/widget.js')
-        .wait().script('js/ulf.js?cachebust=4')
-        .wait(function(){
-            $(document).ready(function() { ulf.setup(); });
-        });
-    </script>
+			color: #222;
+			background: #fafafa;
+		}
+		.hidden {
+			display: none;
+		}
+	</style>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-20212353-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
-
 <body>
-
-    <header>
         <h1>liedberg.org/ulf</h1>
-    </header>
-
-    <div id="content" class="clear">
-        <div id="text-content">
-            <p>
-                de·vel·op·er [dih-vel-uh-per]
-                –noun
-                1. a person or thing that develops.
-            </p>
-
-            <p>
-                Living in <a
-                    href="http://maps.google.se/maps?f=q&source=s_q&hl=sv&geocode=&q=stockholm&sll=61.606396,21.225586&sspn=51.811208,133.417969&ie=UTF8&hq=&hnear=Stockholm,+Stockholms+L%C3%A4n&z=11">Stockholm,
-                Sweden</a>. Currently employed at <a href="http://www.netlight.se">Netlight</a>. Nurturing a wide
-                interest of most aspects of computing. I have been working professionally in the realm of Enterprise
-                Java solutions for the past 5 years at all levels of the stack.
-            <p>
-
-            <p>
-                At the moment I'm interested in the functional ways. Remembering the Haskell & Erlang of university,
-                but applying it in Javascript, both on the front end as well as the back end via <a
-                    href="http://nodejs.org">node.js</a>.
-            </p>
-
-            <p>
-                When not delving into computer related things you can catch me reading, climbing, running or riding a
-                motorbike.
-            <p>
-        </div>
-
-        <div id="twitter-widget-ulf">
-            <!-- populated in JS -->
-        </div>
-
-    </div>
-
+	<p>
+		I've started a company: <a href="http://www.alfhild.io">Alfhild Consulting AB</a>
+	</p>
 </body>
-
 </html>
