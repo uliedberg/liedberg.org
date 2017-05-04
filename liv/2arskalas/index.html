@@ -4,31 +4,63 @@
 	<title>liedberg.org</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
   <style type="text/css">
+    html {
+      background: url("assets/liv-glajjor-bok-vitt.min.jpg");
+      background-position: center top;
+      background-repeat: no-repeat!important;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 		body {
 			font-family: 'Permanent Marker', monospace;
-      font-size: 1.5em;
+      font-size: 1.75em;
+      line-height: 1.75;
 
 			box-sizing: border-box;
-			width: 34em;
+			width: 50rem;
 			max-width: 100%;
-			margin: 5em auto;
-			padding: 0 2em;
+			margin: 0 auto;
+			padding: 2rem 1.5rem;
 
-			color: #222;
-			background: #fafafa;
+			color: brown;
 		}
     h1, h2, h3, h4, h5 {
       font-family: 'Love Ya Like A Sister', cursive;
     }
     h1 {
-      font-size: 3em;
+      font-size: 5rem;
+      line-height: 1.2;
+      text-align: center;
+    }
+    @media (min-width: 30rem) {
+      h1 {
+        text-align: center;
+      }
+    }
+    section {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+    }
+    @media (min-width: 30rem) {
+      section {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 100%;
+      }
+      section > * {
+        grid-column-start: 2;
+      }
     }
     ul {
       list-style-type: none;
+      padding-left: 0;
     }
     a {
-      text-decoration: none;
       color: brown;
+    }
+    .talk {
+      background: white;
+      box-shadow: 0.5rem 0 0 white, -0.5rem 0 0 white;
     }
 		.hidden {
 			display: none;
@@ -48,13 +80,16 @@
 </head>
 <body>
   <h1>Livs 2-årskalas! 😍</h1>
-  <p>
-    Samma som förra året men 2 gånger större - Liv fyller 2 år &amp; det ska firas med fika ☕️
+  <section>
+    <p>
+      <span class="talk">Liv fyller 2 år &amp; det ska firas med fika ☕️. OSA!</span>
+    </p>
     <ul>
-      <li>⏰ 20 Maj 14:30</li>
-      <li>🏠 Folkungagatan 94</li>
-      <li>📱 <a href="tel:+46762482220">0762 482220</a> - portkod &amp; vem vet vad</li>
+      <li><span class="talk">⏰&nbsp;20&nbsp;Maj&nbsp;14:30</span></li>
+      <li><span class="talk">🏠&nbsp;Folkungagatan&nbsp;94</span></li>
+      <li><span class="talk">📱&nbsp;<a href="tel:+46762482220">0762&nbsp;482220</a></span></li>
+      <li><span class="talk">🌈&nbsp;<a href="mailto:ulf@liedberg.org?subject=Vi/jag%20kommer">ulf@liedberg.org</a></span></li>
     </ul>
-  </p>
+  </section>
 </body>
 </html>
